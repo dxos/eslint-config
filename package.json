@@ -1,0 +1,13 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "git@github.com:dxos/eslint-config.git",
+  "author": "Dmytro Maretskyi <maretskii@gmail.com>",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
