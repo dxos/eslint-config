@@ -18,6 +18,29 @@ Add this to your `.eslintrc.json`:
 }
 ```
 
+## Common issues
+
+**Error message:**
+
+```
+Oops! Something went wrong! :(
+
+ESLint: 7.9.0
+
+Error: package.json » plugin:@dxos/recomended:
+        Configuration for rule "import/order" is invalid:
+        Value {"pathGroups":[{"pattern":"@material-ui/**","group":"external","position":"after"},{"pattern":"@{dxos,wirelineio}/**","group":"internal","position":"before"}],"pathGroupsExcludedImportTypes":["@{dxos,wirelineio}/**","@material-ui/**"],"newlines-between":"always","groups":[["builtin","external"],"internal"],"alphabetize":{"order":"asc"}} should NOT have additional properties.
+```
+
+**Workaround:**
+
+Do a clean re-install of node_modules:
+
+```
+git clean -fdx # at repo root
+yarn
+```
+
 ## Contributing
 
 To make changes to recomended config edit `packages/eslint-plugin/configs/recomended.js`
