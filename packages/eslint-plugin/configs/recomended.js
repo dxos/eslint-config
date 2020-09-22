@@ -24,8 +24,8 @@ module.exports = {
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': ['error'],
     '@typescript-eslint/ban-types': 'off',
-    '@dxos/header': 'warn',
-    'import/order': ['warn', {
+    '@dxos/header': 'error',
+    'import/order': ['error', {
       pathGroups: [
         {
           pattern: '@material-ui/**',
@@ -47,6 +47,7 @@ module.exports = {
       alphabetize: {
         order: 'asc'
       }
-    }]
+    }],
+    '@typescript-eslint/no-unused-vars': 'error',
   }
 };
