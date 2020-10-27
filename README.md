@@ -18,6 +18,18 @@ Add this to your `.eslintrc.json`:
 }
 ```
 
+Or for react projects:
+
+```
+yarn add -D @dxos/eslint-plugin typescript eslint-plugin-react
+```
+
+```json
+{
+  "extends": "plugin:@dxos/react"
+}
+```
+
 ## Common issues
 
 **Error message:**
