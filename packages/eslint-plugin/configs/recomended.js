@@ -50,5 +50,6 @@ module.exports = {
     }],
     '@typescript-eslint/no-unused-vars': 'error',
     'curly': ['error', 'all'],
+    'brace-style': ['error', '1tbs']
   }
 };
