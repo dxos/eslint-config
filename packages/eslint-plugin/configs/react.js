@@ -6,6 +6,9 @@ module.exports = {
     ...recomended.extends,
     'plugin:react/recommended'
   ],
+  rules: {
+    "react/prop-types": "off"
+  },
   settings: {
     react: {
       version: 'detect'
