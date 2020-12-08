@@ -7,6 +7,7 @@ module.exports = {
     'plugin:react/recommended'
   ],
   rules: {
+    ...recomended.rules,
     "react/prop-types": "off"
   },
   settings: {
