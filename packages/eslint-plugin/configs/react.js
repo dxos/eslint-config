@@ -8,7 +8,9 @@ module.exports = {
   ],
   rules: {
     ...recomended.rules,
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "error"
   },
   settings: {
     react: {
