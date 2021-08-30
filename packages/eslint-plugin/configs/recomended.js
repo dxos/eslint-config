@@ -7,6 +7,9 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: './tsconfig.json'
+  },
   extends: [
     'plugin:jest/recommended',
     'semistandard',
