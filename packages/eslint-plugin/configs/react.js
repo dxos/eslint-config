@@ -10,6 +10,10 @@ module.exports = {
     ...recomended.rules,
     "react/prop-types": "off",
     "no-use-before-define": "off",
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
     "@typescript-eslint/no-use-before-define": "error"
   },
   settings: {
