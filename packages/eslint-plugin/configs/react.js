@@ -12,7 +12,7 @@ module.exports = {
     "no-use-before-define": "off",
     "jsx-quotes": [
       "error",
-      "prefer-double"
+      "prefer-single"
     ],
     "@typescript-eslint/no-use-before-define": "error"
   },
