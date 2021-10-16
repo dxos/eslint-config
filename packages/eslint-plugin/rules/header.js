@@ -7,6 +7,7 @@ const TEMPLATE = [
 ].join('\n') + '\n'
 
 module.exports = {
+  pattern: REGEX,
   meta: {
     type: 'layout',
 

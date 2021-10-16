@@ -35,6 +35,7 @@ module.exports = {
     '@typescript-eslint/no-useless-constructor': ['error'],
     '@typescript-eslint/ban-types': 'off',
     '@dxos/header': 'error',
+    '@dxos/comment': 'error',
     'import/order': ['error', {
       pathGroups: [
         {
