@@ -38,7 +38,7 @@ module.exports = {
     'import/order': ['error', {
       pathGroups: [
         {
-          pattern: '@material-ui/**',
+          pattern: '@{mui,material-ui}/**',
           group: 'external',
           position: 'after'
         },
@@ -48,7 +48,7 @@ module.exports = {
           position: 'before'
         }
       ],
-      pathGroupsExcludedImportTypes: ['@{dxos,wirelineio}/**', '@material-ui/**'],
+      pathGroupsExcludedImportTypes: ['@{dxos,wirelineio}/**', '@{mui,material-ui}/**'],
       'newlines-between': 'always',
       groups: [
         ['builtin', 'external'],
