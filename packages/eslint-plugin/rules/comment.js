@@ -89,6 +89,7 @@ module.exports = {
 
     docs: {
       description: 'enforce proper comment format',
+      url: 'https://github.com/dxos/eng/blob/main/docs/content/general/writing-code.md#comments'
     },
 
     schema: [],
