@@ -11,7 +11,6 @@ module.exports = {
     project: './tsconfig.json'
   },
   extends: [
-    'plugin:jest/recommended',
     'semistandard',
     'plugin:@typescript-eslint/recommended'
   ],
