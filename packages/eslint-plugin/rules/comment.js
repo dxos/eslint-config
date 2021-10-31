@@ -162,20 +162,21 @@ module.exports = {
       const commentWithoutTodo = commentWordCharsOnly
         .replace(FORMATTED_TODO_PATTERN, '');
 
-      const firstChar = commentWithoutTodo[0];
+      const sentences = commentWithoutTodo.split(/\.|\?|\!/);
 
-      // 7. Check the case of the initial word character.
-      const isLowercase = firstChar !== firstChar.toLocaleUpperCase();
-
-      if (isLowercase) {
+      // 7. Check the final character is punctuation.
+      if (sentences[sentences.length - 1] !== '') {
         return false;
       }
 
-      // 8. Check the final character is punctuation.
-      const endsWithPunctuation = ['.', '?'].includes(comment.value[comment.value.length - 1]);
+      // 8. Check the case of the initial word character.
+      for (const sentence in sentences.slice(0, sentences.length - 1)) {
+        const firstChar = sentence[0];
+        const isLowercase = firstChar !== firstChar.toLocaleUpperCase();
 
-      if (!endsWithPunctuation) {
-        return false;
+        if (isLowercase) {
+          return false;
+        }
       }
 
       return true;
