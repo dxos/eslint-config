@@ -8,6 +8,7 @@ module.exports = {
   ],
   rules: {
     ...recomended.rules,
+    "react/display-name": "off",
     "react/prop-types": "off",
     "no-use-before-define": "off",
     "jsx-quotes": [

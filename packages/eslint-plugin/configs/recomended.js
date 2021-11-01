@@ -60,6 +60,8 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'error',
     'curly': ['error', 'all'],
     'brace-style': ['error', '1tbs'],
-    'quote-props': ['error', 'consistent']
+    'quote-props': ['error', 'consistent'],
+    'multiline-ternary': 'off',
+    'no-unused-expressions': 'off'
   }
 };
