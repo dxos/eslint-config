@@ -8,14 +8,14 @@ module.exports = {
   ],
   rules: {
     ...recomended.rules,
-    "react/display-name": "off",
-    "react/prop-types": "off",
-    "no-use-before-define": "off",
-    "jsx-quotes": [
-      "error",
-      "prefer-single"
+    '@typescript-eslint/no-use-before-define': 'error',
+    'jsx-quotes': [
+      'error',
+      'prefer-single'
     ],
-    "@typescript-eslint/no-use-before-define": "error"
+    'no-use-before-define': 'off',
+    'react/display-name': 'off',
+    'react/prop-types': 'off'
   },
   settings: {
     react: {

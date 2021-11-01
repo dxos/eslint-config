@@ -19,21 +19,17 @@ module.exports = {
     '@dxos'
   ],
   rules: {
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-non-null-assertion': 'off',
-    '@typescript-eslint/no-empty-function': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-floating-promises': 'error',
-    'no-void': [
-      'error',
-      {
-        allowAsStatement: true
-      }
-    ],
-    'no-useless-constructor': 'off',
-    '@typescript-eslint/no-useless-constructor': ['error'],
-    '@typescript-eslint/ban-types': 'off',
     '@dxos/header': 'error',
+    '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-useless-constructor': ['error'],
+    'curly': ['error', 'all'],
+    'brace-style': ['error', '1tbs'],
     'import/order': ['error', {
       pathGroups: [
         {
@@ -57,11 +53,15 @@ module.exports = {
         order: 'asc'
       }
     }],
-    '@typescript-eslint/no-unused-vars': 'error',
-    'curly': ['error', 'all'],
-    'brace-style': ['error', '1tbs'],
-    'quote-props': ['error', 'consistent'],
     'multiline-ternary': 'off',
-    'no-unused-expressions': 'off'
+    'no-unused-expressions': 'off',
+    'no-useless-constructor': 'off',
+    'no-void': [
+      'error',
+      {
+        allowAsStatement: true
+      }
+    ],
+    'quote-props': ['error', 'consistent']
   }
 };
