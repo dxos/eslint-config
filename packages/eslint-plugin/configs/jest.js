@@ -8,6 +8,7 @@ module.exports = {
     'plugin:react/recommended'
   ],
   rules: {
+    ...recomended.rules,
     'jest/valid-expect': 'off'
   }
 }

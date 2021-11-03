@@ -4,6 +4,7 @@ module.exports = {
     header: require('./rules/header'),
   },
   configs: {
+    jest: require('./configs/jest'),
     recomended: require('./configs/recomended'),
     react: require('./configs/react'),
   }
