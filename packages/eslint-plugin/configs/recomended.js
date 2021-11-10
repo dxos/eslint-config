@@ -19,7 +19,7 @@ module.exports = {
     '@dxos'
   ],
   rules: {
-    '@dxos/comment': 'error',
+    '@dxos/comment': 'off',
     '@dxos/header': 'error',
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
