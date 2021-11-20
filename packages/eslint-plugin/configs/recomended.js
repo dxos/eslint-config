@@ -63,6 +63,6 @@ module.exports = {
         allowAsStatement: true
       }
     ],
-    'quote-props': ['error', 'consistent']
+    'quote-props': 'off'
   }
 };
