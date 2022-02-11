@@ -16,6 +16,7 @@ module.exports = {
   ],
   plugins: [
     '@typescript-eslint/eslint-plugin',
+    'unused-imports',
     '@dxos'
   ],
   rules: {
@@ -27,8 +28,13 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-non-null-assertion': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-useless-constructor': ['error'],
+    "unused-imports/no-unused-imports": "error",
+		"unused-imports/no-unused-vars": [
+			"error",
+			{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+		],
     'curly': ['error', 'all'],
     'brace-style': ['error', '1tbs'],
     'import/order': ['error', {
