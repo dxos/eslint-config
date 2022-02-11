@@ -33,7 +33,11 @@ module.exports = {
     "unused-imports/no-unused-imports": "error",
 		"unused-imports/no-unused-vars": [
 			"error",
-			{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+			{
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "none",
+      }
 		],
     'curly': ['error', 'all'],
     'brace-style': ['error', '1tbs'],
@@ -69,6 +73,24 @@ module.exports = {
         allowAsStatement: true
       }
     ],
-    'quote-props': 'off'
+    'quote-props': 'off',
+    'import/export': 'off',
+    'no-extra-parens': 'off',
+    '@typescript-eslint/no-extra-parens': ['off'],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/no-namespace': 'off',
+    'standard/no-callback-literal': 'off',
+    'node/no-callback-literal': 'off',
+    'jest/no-conditional-expect': 'off',
+    'no-restricted-imports': [
+      'error',
+      {
+        patterns: ['**/dist']
+      }
+    ],
+    'jest/valid-expect': 'off',
+    'func-call-spacing': 'off',
+    '@typescript-eslint/func-call-spacing': ['error'],
   }
 };
