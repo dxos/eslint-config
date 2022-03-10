@@ -13,7 +13,8 @@ module.exports = {
     'out',
 
     // Config
-    'esbuild-server.config.js'
+    'esbuild-server.config.js',
+    'webpack.config.js'
   ],
   rules: {
     ...recomended.rules,
