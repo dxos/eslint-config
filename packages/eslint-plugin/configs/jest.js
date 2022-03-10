@@ -5,6 +5,7 @@ module.exports = {
     'plugin:jest/recommended',
   ],
   rules: {
+    'jest/no-conditional-expect': 'off',
     'jest/valid-expect': 'off'
   }
 }

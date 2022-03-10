@@ -3,7 +3,7 @@
 //
 
 // This is a workaround for https://github.com/eslint/eslint/issues/3458
-require("@rushstack/eslint-patch/modern-module-resolution");
+require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
   parser: '@typescript-eslint/parser',
@@ -19,28 +19,41 @@ module.exports = {
     'unused-imports',
     '@dxos'
   ],
+  ignorePatterns: [
+    // Binaries
+    'bin',
+    'main.js',
+
+    // Build Artifacts
+    'dist',
+    'src/proto/gen/*',
+
+    // Config
+    '.eslintrc.js',
+    '.mocharc.js',
+    'jest.config.js',
+
+    // Dependencies
+    'node_modules'
+  ],
   rules: {
     '@dxos/comment': 'off',
     '@dxos/header': 'error',
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/func-call-spacing': ['error'],
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-extra-parens': 'off',
     '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-useless-constructor': ['error'],
-    "unused-imports/no-unused-imports": "error",
-		"unused-imports/no-unused-vars": [
-			"error",
-			{
-        "vars": "all",
-        "varsIgnorePattern": "^_",
-        "args": "none",
-      }
-		],
     'curly': ['error', 'all'],
     'brace-style': ['error', '1tbs'],
+    'func-call-spacing': 'off',
     'import/order': ['error', {
       pathGroups: [
         {
@@ -73,24 +86,33 @@ module.exports = {
         allowAsStatement: true
       }
     ],
+    'padded-blocks': 'off',
     'quote-props': 'off',
     'import/export': 'off',
     'no-extra-parens': 'off',
-    '@typescript-eslint/no-extra-parens': ['off'],
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': 'off',
-    '@typescript-eslint/no-namespace': 'off',
-    'standard/no-callback-literal': 'off',
-    'node/no-callback-literal': 'off',
-    'jest/no-conditional-expect': 'off',
+    'no-lone-blocks': 'off',
     'no-restricted-imports': [
       'error',
       {
-        patterns: ['**/dist']
+        patterns: [
+          '**/dist',
+          '**/src/**',
+          '!./**',
+          '!../**'
+        ]
       }
     ],
-    'jest/valid-expect': 'off',
-    'func-call-spacing': 'off',
-    '@typescript-eslint/func-call-spacing': ['error'],
+    'no-use-before-define': 'off',
+    'node/no-callback-literal': 'off',
+    'standard/no-callback-literal': 'off',
+    'unused-imports/no-unused-imports': 'error',
+    'unused-imports/no-unused-vars': [
+      'error',
+      {
+        'vars': 'all',
+        'varsIgnorePattern': '^_',
+        'args': 'none',
+      }
+    ]
   }
 };

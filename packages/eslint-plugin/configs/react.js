@@ -6,14 +6,21 @@ module.exports = {
     ...recomended.extends,
     'plugin:react/recommended'
   ],
+  ignorePatterns: [
+    ...recomended.ignorePatterns,
+
+    // Build Artifacts
+    'out',
+
+    // Config
+    'esbuild-server.config.js'
+  ],
   rules: {
     ...recomended.rules,
-    '@typescript-eslint/no-use-before-define': 'error',
     'jsx-quotes': [
       'error',
       'prefer-single'
     ],
-    'no-use-before-define': 'off',
     'react/display-name': 'off',
     'react/function-component-definition': ['error', {
       'namedComponents': 'arrow-function',
