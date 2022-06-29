@@ -17,6 +17,7 @@ module.exports = {
   plugins: [
     '@typescript-eslint/eslint-plugin',
     'unused-imports',
+    'prefer-arrow',
     '@dxos'
   ],
   ignorePatterns: [
