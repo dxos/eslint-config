@@ -17,7 +17,7 @@ module.exports = {
   plugins: [
     '@typescript-eslint/eslint-plugin',
     'unused-imports',
-    'prefer-arrow',
+    'prefer-arrow-functions',
     '@dxos'
   ],
   ignorePatterns: [
@@ -115,12 +115,13 @@ module.exports = {
         'args': 'none',
       }
     ],
-    'prefer-arrow/prefer-arrow-functions': [
+    'prefer-arrow-functions/prefer-arrow-functions': [
       'error',
       {
+        classPropertiesAllowed: false,
         disallowPrototype: false,
-        singleReturnOnly: false,
-        classPropertiesAllowed: false
+        returnStyle: 'implicit',
+        singleReturnOnly: false
       }
     ]
   }

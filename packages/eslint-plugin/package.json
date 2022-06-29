@@ -14,7 +14,7 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jest": "^26.1.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "@stayradiated/eslint-plugin-prefer-arrow-functions": "^4.4.0",
     "eslint-plugin-promise": "^5.0.0",
     "eslint-plugin-react": "^7.29.3",
     "eslint-plugin-standard": "^5.0.0",

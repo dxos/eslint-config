@@ -57,6 +57,11 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz#7f698254aadf921e48dda8c0a6b304026b8a9323"
   integrity sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A==
 
+"@stayradiated/eslint-plugin-prefer-arrow-functions@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@stayradiated/eslint-plugin-prefer-arrow-functions/-/eslint-plugin-prefer-arrow-functions-4.4.0.tgz#a106a89c6ce845a238f64b219334b161628f955c"
+  integrity sha512-up0VT6Oh31vVvi1/dyyTEHnCpN7JRglT/quVKMHt2gWVi9tbkgXDRR4Xx1Jd9LwoLpwDhnCL3m56lrtHivl0ig==
+
 "@types/json-schema@^7.0.9":
   version "7.0.9"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
@@ -457,11 +462,6 @@ eslint-plugin-node@^11.1.0:
     minimatch "^3.0.4"
     resolve "^1.10.1"
     semver "^6.1.0"
-
-eslint-plugin-prefer-arrow@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prefer-arrow/-/eslint-plugin-prefer-arrow-1.2.3.tgz#e7fbb3fa4cd84ff1015b9c51ad86550e55041041"
-  integrity sha512-J9I5PKCOJretVuiZRGvPQxCbllxGAV/viI20JO3LYblAodofBxyMnZAJ+WGeClHgANnSJberTNoFWWjrWKBuXQ==
 
 eslint-plugin-promise@^5.0.0:
   version "5.2.0"
