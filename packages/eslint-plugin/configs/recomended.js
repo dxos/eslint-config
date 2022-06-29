@@ -113,6 +113,14 @@ module.exports = {
         'varsIgnorePattern': '^_',
         'args': 'none',
       }
+    ],
+    'prefer-arrow/prefer-arrow-functions': [
+      'error',
+      {
+        disallowPrototype: false,
+        singleReturnOnly: false,
+        classPropertiesAllowed: false
+      }
     ]
   }
 };
