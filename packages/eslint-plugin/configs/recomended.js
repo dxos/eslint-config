@@ -17,7 +17,7 @@ module.exports = {
   plugins: [
     '@typescript-eslint/eslint-plugin',
     'unused-imports',
-    'prefer-arrow-functions',
+    '@stayradiated/prefer-arrow-functions',
     '@dxos'
   ],
   ignorePatterns: [
@@ -115,7 +115,7 @@ module.exports = {
         'args': 'none',
       }
     ],
-    'prefer-arrow-functions/prefer-arrow-functions': [
+    '@stayradiated/prefer-arrow-functions/prefer-arrow-functions': [
       'error',
       {
         classPropertiesAllowed: false,
