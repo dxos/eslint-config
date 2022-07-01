@@ -124,6 +124,8 @@ module.exports = {
         returnStyle: 'implicit',
         singleReturnOnly: false
       }
-    ]
+    ],
+    '@rushstack/packlets/mechanics': ['error'],
+    '@rushstack/packlets/circular-deps': ['error']
   }
 };
