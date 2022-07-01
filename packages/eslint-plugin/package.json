@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
+    "@rushstack/eslint-plugin-packlets": "^0.4.1",
     "@stayradiated/eslint-plugin-prefer-arrow-functions": "^4.4.0",
     "@typescript-eslint/eslint-plugin": "^5.11.0",
     "@typescript-eslint/parser": "^5.11.0",

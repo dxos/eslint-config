@@ -12,7 +12,8 @@ module.exports = {
   },
   extends: [
     'semistandard',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@rushstack/eslint-plugin-packlets/recommended'
   ],
   plugins: [
     '@typescript-eslint/eslint-plugin',
