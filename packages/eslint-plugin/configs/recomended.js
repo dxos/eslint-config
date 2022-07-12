@@ -121,7 +121,7 @@ module.exports = {
       {
         classPropertiesAllowed: false,
         disallowPrototype: false,
-        returnStyle: 'implicit',
+        returnStyle: 'unchanged',
         singleReturnOnly: false
       }
     ],
