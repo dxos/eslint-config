@@ -1,3 +1,7 @@
+//
+// Copyright 2020 DXOS.org
+//
+
 const recomended = require('./recomended');
 
 module.exports = {

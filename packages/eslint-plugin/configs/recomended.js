@@ -15,6 +15,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@rushstack/eslint-plugin-packlets/recommended'
   ],
+  // NOTE: Order is important.
   plugins: [
     '@typescript-eslint/eslint-plugin',
     'unused-imports',
@@ -41,9 +42,33 @@ module.exports = {
   rules: {
     '@dxos/comment': 'off',
     '@dxos/header': 'error',
+
+    '@rushstack/packlets/mechanics': ['error'],
+    '@rushstack/packlets/circular-deps': ['error'],
+    '@stayradiated/prefer-arrow-functions/prefer-arrow-functions': [
+      'error',
+      {
+        classPropertiesAllowed: false,
+        disallowPrototype: false,
+        returnStyle: 'unchanged',
+        singleReturnOnly: false
+      }
+    ],
+
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/func-call-spacing': ['error'],
+    '@typescript-eslint/member-delimiter-style': [
+      'error',
+      {
+        multiline: {
+          delimiter: 'none'
+        },
+        singleline: {
+          delimiter: 'comma'
+        }
+      }
+    ],
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-extra-parens': 'off',
@@ -53,9 +78,11 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-useless-constructor': ['error'],
-    'curly': ['error', 'all'],
+
     'brace-style': ['error', '1tbs'],
+    'curly': ['error', 'all'],
     'func-call-spacing': 'off',
+    'import/export': 'off',
     'import/order': ['error', {
       pathGroups: [
         {
@@ -64,12 +91,15 @@ module.exports = {
           position: 'after'
         },
         {
-          pattern: '@{dxos,wirelineio}/**',
+          pattern: '@{dxos,braneframe}/**',
           group: 'internal',
           position: 'before'
         }
       ],
-      pathGroupsExcludedImportTypes: ['@{dxos,wirelineio}/**', '@{mui,material-ui}/**'],
+      pathGroupsExcludedImportTypes: [
+        '@{dxos,braneframe}/**',
+        '@{mui,material-ui}/**'
+      ],
       'newlines-between': 'always',
       groups: [
         ['builtin', 'external'],
@@ -80,17 +110,7 @@ module.exports = {
       }
     }],
     'multiline-ternary': 'off',
-    'no-unused-expressions': 'off',
-    'no-useless-constructor': 'off',
-    'no-void': [
-      'error',
-      {
-        allowAsStatement: true
-      }
-    ],
-    'padded-blocks': 'off',
-    'quote-props': 'off',
-    'import/export': 'off',
+    'node/no-callback-literal': 'off',
     'no-extra-parens': 'off',
     'no-lone-blocks': 'off',
     'no-restricted-imports': [
@@ -104,8 +124,17 @@ module.exports = {
         ]
       }
     ],
+    'no-unused-expressions': 'off',
     'no-use-before-define': 'off',
-    'node/no-callback-literal': 'off',
+    'no-useless-constructor': 'off',
+    'no-void': [
+      'error',
+      {
+        allowAsStatement: true
+      }
+    ],
+    'padded-blocks': 'off',
+    'quote-props': 'off',
     'standard/no-callback-literal': 'off',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
@@ -116,16 +145,5 @@ module.exports = {
         'args': 'none',
       }
     ],
-    '@stayradiated/prefer-arrow-functions/prefer-arrow-functions': [
-      'error',
-      {
-        classPropertiesAllowed: false,
-        disallowPrototype: false,
-        returnStyle: 'unchanged',
-        singleReturnOnly: false
-      }
-    ],
-    '@rushstack/packlets/mechanics': ['error'],
-    '@rushstack/packlets/circular-deps': ['error']
   }
 };

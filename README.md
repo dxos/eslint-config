@@ -1,6 +1,6 @@
 # DXOS eslint config
 
-An eslint config for DXOS packages. Extends semistandard with typescript support. Has a rule for copyright header.
+An eslint config for DXOS packages that extends semistandard with typescript support
 
 ## Usage
 
