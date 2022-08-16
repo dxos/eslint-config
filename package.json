@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "repository": "git@github.com:dxos/eslint-config.git",
-  "author": "Dmytro Maretskyi <maretskii@gmail.com>",
-  "license": "AGPLv3",
+  "license": "MIT",
+  "author": "info@dxos.org",
   "workspaces": {
     "packages": [
       "packages/*"
